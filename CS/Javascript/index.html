@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="dark">
+   <div id="container"> 
+   <div class="box one"> <h1 id="myH1"></h1>
+    <p id="myP"></p>
+    <button onclick="change()">Click me</button>
+   </div>
+    <!--Counter Button -->
+ <div class="box two"><h2>Count Button</h2>
+    <p id="number">0</p>
+    <button onclick="counter()">Count</button>
+    <p id="test">(get to 100 for a prize)</p>
+ </div>
+    
+    <!--Dark Mode-->
+    <div class="box three">
+     <button id="switch" onclick="darkMode()">Dark Mode</button>
+    </div>
+    <h2>JavaScript Modal and Pop-Ups</h2>
+
+  <!--Button to open the modal-->
+    <button id="openModalBtn">Open Modal</button>
+
+  <!--Button to trigger a simple pop-up alert -->
+    <button id="alertBtn">Show Alert</button>
+
+    <!--The Modal -->
+    <div id="myModal" class="modal"></div>
+        <div class="modal content">
+            <span class="close" id="closeModalBtn">&times;</span>
+            <h2>Modal Header</h2>
+            <p>This is a Simple Modal Example!</p>
+        </div>
+
+    <!--Event Handling -->  
+     <h3>Event Handling</h3>   
+      <button id="clickme" onclick="clickMe()">Click Me</button>
+
+       <!--Form-Submission -->
+        <h1>Form Submission</h1>
+       <form id="myForm">
+        <label id="name" for="name" name="name">Enter Your Name:</label><br>
+        <input for="name" id="enter-name" required type="text" placeholder="Timothy Davis"></input> <br><br>
+        
+        <label for="email" id="email">Enter your email:</label> <br>
+        <input id="enter-Email" for="email" type="email" placeholder="Name123@gmail.com" required> <br> <br>
+        
+        <label for="Message" id="Message">Message:</label> <br>
+        <textarea placeholder="I love coding"></textarea> <br>
+        <button id="submit" type="submit" value="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+ </body>
+</html> 
