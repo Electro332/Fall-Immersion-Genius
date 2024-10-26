@@ -54,16 +54,21 @@ const closeModalBtn = document.getElementById("closeModalBtn");
 const alertBtn = document.getElementById("alertBtn");
 
 //Open Modal on button click
-openModalButton.onclick = function Open() {
+openModalButton.onclick = function() {
     modal.style.display = "block";
+}
+
+//Close modal on close button click 
+closeModalBtn.onclick = function() {
+    modal.style.display = "none";
 }
 
 //close Modal on outside click 
 window.onclick = function(event){
     if (event.target === modal) {
-        modal.style.display = "none"
+        modal.style.display = "none";
     }
-};
+}
 
 //show alert on button click
 alertBtn.onclick = function() {
