@@ -82,15 +82,18 @@ alertBtn.onclick = function() {
         document.body.appendChild(image);
     });
 
-    
+   //form submisson
     document.addEventListener("DOMContentLoaded", () => {
         const form = document.getElementById("myForm");
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const message = document.getElementById("message");
 
         form.addEventListener("submit", function(event) {
             event.preventDefault();
 
             if (name && email && message) {
-                alert("Form submitted successfully!\nName: ${name}\nEmail ${email} \nMessage ${message}");
+                alert(`Form submitted successfully!\nName: ${name}\nEmail: ${email} \nMessage: ${message}`);
             } else {
                 alert("Please fill out the required information") ;
             }
