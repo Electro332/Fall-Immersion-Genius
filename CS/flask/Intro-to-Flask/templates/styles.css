@@ -1,0 +1,14 @@
+/* Genius can add custom styles here if needed */
+
+.jumbotron {
+    background-image: url('/images/download\ \(1\).jpeg');
+    background-size: cover;
+    color: white;
+}
+
+.btn {
+    background-color: red;
+    border: red;
+}
+
+
